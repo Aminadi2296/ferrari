@@ -15,9 +15,9 @@ import Track from '../assets/f1-intrack.jpg';
 			<div class="absolute top-1/2 left-1/2 z-[-10] text-white">
 			</div>
 		
-			<img src={Ferrari.src}  class="left-0  bottom-0 absolute flex-center w-3xl" id="ferrari" alt="Ferrari logo" />
-			<div class="absolute top-60 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-white flex flex-col items-center justify-center space-y-6 w-full px-8">
-				<h1 id="title" class="font-bold uppercase text-9xl opacity-0">Il Cavallino Rampante</h1>
+			<img src={Ferrari.src}  class="left-0  bottom-0 absolute flex-center lg:w-3xl w-xl" id="ferrari" alt="Ferrari logo" />
+			<div class="absolute lg:top-60  top-80 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-50 text-white flex flex-col items-center justify-center space-y-6 w-full px-12">
+				<h1 id="title" class="font-bold uppercase lg:text-9xl text-8xl opacity-0">Il Cavallino Rampante</h1>
 				<p id="subtitle" class="font-serif text-xl opacity-0"> Progettata per vincere. Nata per correre.</p>
 				<button id="button" class="flex items-center justify-center text-3xl border uppercase font-bold border-white bg-transparent text-white hover:bg-white  px-12 py-2 rounded-full hover:border hover:border-white hover:text-gray-700 transition-all opacity-0 cursor-pointer">Inizia il viaggio</button>
 			</div>
@@ -46,7 +46,7 @@ import Track from '../assets/f1-intrack.jpg';
 			scrub: 1,
 		},
 	})
-	.to('#ferrari', {translateX: 1300, duration: 1})
+	.to('#ferrari', {translateX: 1500, duration: 1})
 	.to('#bg-wallpaper', {maskSize: 'clamp(5000vh, 3500%, 7000vh)'}, 1)
 	.to('#bg-wallpaper', {opacity: 1}, 1)
 	.to('#title', {opacity: 1}, 1)
